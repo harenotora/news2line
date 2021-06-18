@@ -22,10 +22,10 @@ def feed(rssurl):
     for entry in d['entries']:  # エントリーの数だけループ
         title = entry.title  # エントリーのタイトル
         link = entry.link + "\n"  # エントリーのURL
-        strings.append(title)
-        strings.append(link)
+        strings.append(title)  # stringsにエントリーのタイトルを足す
+        strings.append(link)  # stringsにエントリーのURLを足す
 
-    ret = "\n".join(strings)
+    ret = "\n".join(strings)  # retにstringsの全てを書き出し
     return ret
 
 
@@ -35,5 +35,5 @@ def feed(rssurl):
 # などとして実行した場合のみ、以下のコードが実行されます。
 # これによりこのモジュールの正常性の確認が行なえます。
 if __name__ == '__main__':
-    rssurl = 'https://karapaia.com/index.rdf'  # RSSのURLとしてカラパイアのRSSのURLを指定する。
-    print(feed(rssurl))  # feed関数を呼び出し標準出力に出力。
+    rssurl = 'https://karapaia.com/index.rdf'  # RSSのURLとしてカラパイアのRSSのURLを指定する
+    print(feed(rssurl))  # feed関数を呼び出し標準出力に出力
