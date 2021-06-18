@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 import requests  # http通信用のモジュールをインポート
 
-line_token = 'reGgabYfWDuL7X0uYJVSHR46nGp2Bg3dFfezbaiPnJj'  # トークン
+line_token = 'xxx'  # トークン
 api_url = 'https://notify-api.line.me/api/notify'  # APIのURL
 
 
