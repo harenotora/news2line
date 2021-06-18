@@ -26,4 +26,4 @@ def line_send(strings):
 # などとして実行した場合のみ、以下のコードが実行されます。
 # これによりこのモジュールの正常性の確認が行なえます。
 if __name__ == '__main__':
-    line_send("とらだよー\nとらとら")  # line_send関数を呼び出す
+    line_send("とらだよー\nとらとら")  # line_send関数を呼び出す。
